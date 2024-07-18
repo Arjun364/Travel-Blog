@@ -145,9 +145,24 @@ nav .btn:focus,.btn:active,.btn:hover,.btn{
 nav img{
     width: 15rem;
 }
+ #hamburger{
+    display: none;
+    font-size: 2rem;
+}
 
 /* philosophy section */
 
+#about {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .container-0{
+    justify-content: space-around;
+    align-items: center;
+}
 #about .box{
     width: 20rem;
     height: 7rem;
@@ -522,6 +537,10 @@ nav img{
 
 }
 
+#banner4 h1{
+    font-size: 70px;
+  }
+
 /* <-- banner 5 --> */
 #banner5{
     background: url(./assets/banner-5.jpg);
@@ -555,12 +574,29 @@ nav img{
 
 }
 
+#banner7 h1{
+    font-size: 70px;
+  }
 
 /* footer */
 
+ footer {
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+ }
  footer .container-3{
     gap: 9rem;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+ }
+ footer .container-3 .parag{
+    
+ }
+
+ footer input{
+    width: 10rem;
  }
 
 .btn6{
