@@ -138,7 +138,7 @@
     }
 
     /* banner 4 */
-    #banner4 h1{
+    #banner4 h1 {
       font-size: 60px;
     }
 
@@ -162,7 +162,7 @@
 
     /* our travel philiosophy  */
     #about {
-      padding: 2rem 0rem;
+      padding: 2rem 1rem;
       height: auto;
     }
 
@@ -178,42 +178,127 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 30rem;
+      width: 100%;
     }
 
     #about .container-0 .para,
     #about h5 {
-      width: 30rem;
+      width: 100%;
       text-align: center;
+    }
+
+    /* latest from the blog */
+    #blog {
+      height: auto;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    #blog div div {
+      flex-direction: column;
+    }
+
+    #blog div div .cards {
+      min-width: 100%;
+      /* border: 2px solid black; */
+    }
+
+    /* collection section  */
+    #places {
+      height: auto;
+      padding: 3rem 1rem;
+    }
+
+    .img2{
+      width: 100%;
+    }
+
+    /* banner 2 */
+    #banner2 h1{
+      font-size: 60px;
+    }
+    /* banner 3,4,5,6,,7 */
+    #banner3 h1,#banner4 h1,#banner5 h1,#banner6 h1{
+      font-size: 40px;
+    }
+    #banner4 h1{
+      font-size: 35px;
     }
 
     /* banner 7 */
-    #banner7 h1{
-    font-size: 60px;
-  }
+    #banner7 h1 {
+      font-size: 35px;
+    }
+
+    /* more collection */
+    #coll {
+      height: auto;
+      padding: 3rem 1rem;
+    }
+    #coll .container-2{
+      flex-direction: column;
+      gap: 1rem;
+    }
+    #coll .container-2 .cards{
+      width: 100%;
+
+    }
+
 
     /* footer */
-    footer{
+    footer {
       height: auto;
       padding: 2rem 0rem;
     }
-    footer p{
+
+    footer ul{
+      font-size: 1rem;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    footer ul li{
+      font-weight: bolder;
+    }
+
+    footer p {
       width: 20rem;
     }
-    footer .container-3{
+
+    footer .container-3 {
       flex-direction: column;
       gap: 2rem;
     }
-    footer .container-3 .parag{
+
+    footer .container-3 .parag {
       text-align: center;
 
     }
-    footer .container-3 form{
+
+    footer .container-3 form {
       display: flex;
       align-items: center;
       padding: 1rem;
 
     }
+  }
+
+  @media (max-width:450px){
+    /* banners */
+    #banner2 h1{
+      font-size: 40px;
+    }
+    #banner3 h1{
+      font-size: 30px;
+      text-align: center;
+    }
+
+    #banner2 h1,#banner2 p,#banner3 h1,#banner4 h1,#banner5 h1,#banner6 h1,#banner7 h1{
+      text-align: center;
+    }
+
   }
 </style>
 
@@ -254,7 +339,7 @@
   <!-- our travel philiosophy -->
   <section class=" w-100 d-flex  gap-5" id="about">
     <div class=" d-flex container-0" style="gap: 3rem;">
-      <div class="w-25 ">
+      <div class="context">
         <p class="para">
           Along Dusty Roads brings you the beauty of a life of travel, personally curated by us, Andrew & Emily.
         </p>
@@ -279,12 +364,12 @@
   </section>
 
   <!-- latest from the blog -->
-  <section class="vh-100 d-flex flex-column align-items-center justify-content-center gap-5" id="blog">
+  <section class="d-flex flex-column align-items-center justify-content-center " id="blog">
     <div class=" d-flex flex-column justify-content-center align-items-center gap-3">
       <h3 style="text-transform: uppercase; font-weight: bold;">Latest from the blog</h3>
       <p>Our most recent city guides, itineraries, journal pieces and how-to guides from our recent travels around the
         world.</p>
-      <div class="w-100 d-flex align-items-center justify-content-center gap-3">
+      <div class="w-100 gap-3">
         <!-- card 1 -->
         <div class="d-flex flex-column gap-2 cards">
           <div class="img" id="img1"></div>
@@ -315,11 +400,11 @@
   <section id="banner2" class="bg-primary d-flex flex-column align-items-center justify-content-center"
     style="height: 80vh;">
     <p>DISCOVER NATURE, BEACHES AND BEAUTY</p>
-    <h1 style="font-size: 70px;">COSTA RICA</h1>
+    <h1>COSTA RICA</h1>
   </section>
 
   <!-- collection section -->
-  <section id="places" class=" d-flex align-items-center justify-content-center " style="height: 120vh;">
+  <section id="places" class=" d-flex align-items-center justify-content-center ">
     <div id="container-1" class="box d-flex flex-wrap gap-4 align-items-center justify-content-center">
       <div class="img2" id="img2-1"></div>
       <div class="img2" id="img2-2"></div>
@@ -338,7 +423,7 @@
   </section>
 
   <!-- more collections -->
-  <section class=" " id="coll" style="height: 130vh;">
+  <section id="coll">
     <h3>CAN YOU PERU?</h3>
     <p>There’s much much more to Peru than Machu Picchu, but that’s not a bad place to start either.</p>
     <p>Start with our guides, or visit our dedicated Peru page. </p>
@@ -393,13 +478,13 @@
   <section id="banner5" class="bg-primary d-flex flex-column align-items-center justify-content-center"
     style="height: 80vh;">
     <p>PLAN FOR THE PERFECT SUMMER</p>
-    <h1 style="font-size: 70px;">ITALY</h1>
+    <h1>ITALY</h1>
   </section>
 
   <!-- banner 6 -->
   <section id="banner6" class="bg-primary d-flex flex-column align-items-center justify-content-center"
     style="height: 80vh;">
-    <h1 style="font-size: 70px;">THE PRINT STORE</h1>
+    <h1>THE PRINT STORE</h1>
     <button class="btn4">Shop now</button>
   </section>
 
@@ -413,11 +498,11 @@
 
   <!-- footer -->
   <footer class="d-flex gap-5 flex-column" style=" background-color: #eae0d7;">
-    <ul class="d-flex gap-5 list-unstyled ">
-      <li>contact us</li>
-      <li>home</li>
-      <li>work with us</li>
-      <li>disclaimer and privacy policy</li>
+    <ul class="d-flex list-unstyled ">
+      <li>Contact us</li>
+      <li>Home</li>
+      <li>Work with us</li>
+      <li>Disclaimer and Privacy Policy</li>
     </ul>
     <div class=" d-flex  container-3">
       <div class="parag">
