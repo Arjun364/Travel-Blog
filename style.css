@@ -145,9 +145,25 @@ nav .btn:focus,.btn:active,.btn:hover,.btn{
 nav img{
     width: 15rem;
 }
+ #hamburger{
+    display: none;
+    font-size: 2rem;
+}
 
 /* philosophy section */
 
+#about {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .container-0{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
 #about .box{
     width: 20rem;
     height: 7rem;
@@ -164,6 +180,10 @@ nav img{
     position: absolute;
     top: 10rem;
     right: 20rem;
+}
+
+#about .container-0 .context{
+    width: 20rem;
 }
 
 .btn2{
@@ -183,9 +203,25 @@ nav img{
 }
 
 /* <-- latest from the blog --> */
+#blog {
+    height: 100vh;
+    gap: 4rem;
+}
+/* <-- latest from the blog --> */
+#blog .cards{
+    width: 15rem; 
+    font-size: 14px; 
+    cursor: pointer;
+}
+
+#blog div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .img{
-    width: 15rem;
+    width: 100%;
     height: 15rem;
     background-color: #f9b862;
 }
@@ -238,12 +274,23 @@ nav img{
 
 }
 
+#banner2 h1{
+    font-size: 70px;
+}
+
 
 /* <-- collection section --> */
 
+#places{
+    height:120vh ;
+}
+
+#container-1{
+    max-width: 70%;
+}
 .img2{
-    width: 20rem;
-    height: 20rem;
+    width: 16rem;
+    height: 16rem;
     background-color: #eae0d7;
 }
 
@@ -436,15 +483,37 @@ nav img{
 
 }
 
+#banner3 h1{
+    font-size: 70px;
+}
+
 /* <-- more collections --> */
 
+#coll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 130vh;
+}
+
+#coll .container-2{
+    width: 50rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    
+}
 #coll .img3{
-    width: 16rem;
+    width: 100%;
     height: 20rem;
     background-color: #eae0d7;
 }
 #coll .cards{
     transition: all 200ms linear;
+    width: 20rem;
 }
 #coll .cards:hover{
     scale: 1.05;
@@ -492,6 +561,10 @@ nav img{
 
 }
 
+#banner4 h1{
+    font-size: 70px;
+  }
+
 /* <-- banner 5 --> */
 #banner5{
     background: url(./assets/banner-5.jpg);
@@ -503,6 +576,10 @@ nav img{
 
 }
 
+#banner5 h1{
+    font-size: 70px;
+}
+
 /* <-- banner 6 --> */
 #banner6{
     background: url(./assets/banner-6.png);
@@ -512,6 +589,9 @@ nav img{
     color: white;
     background-attachment: fixed;
 
+}
+#banner6 h1{
+    font-size: 70px;
 }
 
 /* <-- banner 7 --> */
@@ -525,9 +605,37 @@ nav img{
 
 }
 
+#banner7 h1{
+    font-size: 70px;
+  }
 
 /* footer */
 
+ footer {
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 0rem 3rem;
+ }
+ footer .container-3{
+    gap: 9rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+ }
+
+footer ul{
+    gap: 10rem;
+    
+}
+footer ul li{
+    font-weight: bolder;
+    
+}
+
+ footer input{
+    width: 10rem;
+ }
 
 .btn6{
     width: 5rem;
@@ -536,4 +644,5 @@ nav img{
     background-color: black;
     color: white;
     font-weight: bold;
+
 }
